@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+<body class="game-page">
+
+    <nav id="navigation">
+
+        <a href="index.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="explanation.html">How does it work?</a>
+        <a href="moodboard.html">Moodboard</a>
+
+    </nav>
+
+    <div class="stappenform">
+
+        <div class="stappen">
+
+            <h1 id="titel">Hoe ben ik eraan begonnen?</h1>
+
+            <div id="stap1">
+                <h1>Stap 1.</h1>
+                <p>Ik ben begonnen met mijn rekken te maken waar dan later de producten op zouden komen.</p>
+                <img id="fotostap1" src="Images/rek.png" alt="rekken">
+            </div>
+
+            <div id="stap2">
+                <h1>Stap 2.</h1>
+                <p>Dan ben ik begonnen met de eekhoorn en de kar, deze bewegen dan ook rond 1 centraal punt en volgen de
+                    muis langs de x-as.</p>
+                <img id="fotostap2" src="Images/eekhoorn.png" alt="eekhoorn">
+            </div>
+
+            <div id="stap3">
+                <h1>Stap 3.</h1>
+                <p>Uiteraard moeten de rekken nog gevuld met producten, hiervoor heb ik verschillende classes gemaakt
+                    waardoor we deze makkelijk op meerdere plaatsen kunnen zetten.
+                </p>
+                <img id="fotostap3" src="Images/gevuldrek.png" alt="eekhoorn">
+            </div>
+
+        </div>
+
+
+
+        <div id="form">
+            <h2>Wat vind je van de game?</h2>
+            <h3>Laat hier je feedback op de game achter moest je die hebben.</h3>
+
+            <form name="feedbackForm" action="game.html" onsubmit="return validateemail();">
+                <div id="Feedback">
+                    <label for="feedback">feedback</label>
+                    <input id="feedback" type="text">
+                </div>
+
+                <div id="e-mailadres">
+                    <label for="mail">E-mailadres</label>
+                    <input id="mail" type="email" required>
+                </div>
+
+                <div id="checkbox">
+                    <input type="checkbox" id="update">
+                    <label for="update">Ik wil een mail ontvangen als er een update is</label>
+                </div>
+
+                <div id="button">
+                    <input type="submit" value="verstuur">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src='js/gamepage.js'></script>
+</body>
+
+</html>
